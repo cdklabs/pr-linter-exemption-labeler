@@ -1,11 +1,44 @@
 const { GitHubActionTypeScriptProject } = require('projen-github-action-typescript');
 const project = new GitHubActionTypeScriptProject({
   defaultReleaseBranch: 'main',
-  devDeps: ['projen-github-action-typescript'],
   name: 'pr-linter-exemption-labeler',
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  deps: ['@octokit/graphql', '@actions/core', '@actions/github', '@octokit/rest'],
+  metadata: {
+    author: 'Kendra Neil',
+    inputs: {
+      'github-token': {
+        description: 'GitHub token',
+        required: true,
+      },
+    },
+  },
+  devDeps: ['projen-github-action-typescript'],
+  eslintOptions: {
+    prettier: true,
+  },
+  jestOptions: {
+    verbose: true,
+    silent: true,
+  },
 });
+
+project.package.addField('prettier', {
+  singleQuote: true,
+  semi: true,
+  trailingComma: 'es5',
+  printWidth: 100,
+});
+
+project.eslint.addRules({
+  'prettier/prettier': [
+    'error',
+    { singleQuote: true, semi: true, trailingComma: 'es5', printWidth: 100 },
+  ],
+});
+
+project.eslint.addOverride({
+  files: ['*-function.ts'],
+  rules: { 'prettier/prettier': 'off' },
+});
+
 project.synth();
