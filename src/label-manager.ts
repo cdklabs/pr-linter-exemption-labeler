@@ -85,11 +85,11 @@ export class PullRequestCommentBasedLabelManager {
           {
             test: labelAddedCliIntegTestNeeded,
             expects: true,
-            outputOnFailure: 'already present',
+            outputOnFailure: 'it was not present',
           },
           {
             test: labelAddedCliIntegTestComplete,
-            expects: false,
+            expects: true,
             outputOnFailure: `label '${Label.CLI_INTEG_TESTED}' is not present`,
           },
         ],
