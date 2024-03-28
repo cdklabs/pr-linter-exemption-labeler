@@ -7,8 +7,7 @@
   "root": true,
   "plugins": [
     "@typescript-eslint",
-    "import",
-    "prettier"
+    "import"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,7 +17,6 @@
   },
   "extends": [
     "plugin:import/typescript",
-    "prettier",
     "plugin:prettier/recommended"
   ],
   "settings": {
@@ -38,22 +36,13 @@
   },
   "ignorePatterns": [
     "*.js",
-    "!.projenrc.js",
     "*.d.ts",
     "node_modules/",
     "*.generated.ts",
-    "coverage"
+    "coverage",
+    "!.projenrc.js"
   ],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "semi": true,
-        "trailingComma": "es5",
-        "printWidth": 100
-      }
-    ],
     "@typescript-eslint/no-require-imports": [
       "error"
     ],
@@ -132,9 +121,26 @@
           "method"
         ]
       }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true,
+        "trailingComma": "es5",
+        "printWidth": 100
+      }
     ]
   },
   "overrides": [
+    {
+      "files": [
+        "*-function.ts"
+      ],
+      "rules": {
+        "prettier/prettier": "off"
+      }
+    },
     {
       "files": [
         ".projenrc.js"
@@ -142,14 +148,6 @@
       "rules": {
         "@typescript-eslint/no-require-imports": "off",
         "import/no-extraneous-dependencies": "off"
-      }
-    },
-    {
-      "files": [
-        "*-function.ts"
-      ],
-      "rules": {
-        "prettier/prettier": "off"
       }
     }
   ]
