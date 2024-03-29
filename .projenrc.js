@@ -1,6 +1,7 @@
 const { GitHubActionTypeScriptProject } = require('projen-github-action-typescript');
 const project = new GitHubActionTypeScriptProject({
   defaultReleaseBranch: 'main',
+  release: false,
   name: 'pr-linter-exemption-labeler',
   deps: ['@octokit/graphql', '@actions/core', '@actions/github', '@octokit/rest'],
   metadata: {
