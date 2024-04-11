@@ -24,7 +24,7 @@ export class GitHubClient {
     this.client = new Octokit({ auth: token });
   }
 
-  public async updateLabelOnPullRequest(props: LabelUpdateProps) {
+  public async updateLabelOnPullRequest(props: LabelUpdateProps): Promise<{}> {
     if (props.updateType === 'created') {
       return this.addLabelToPullRequest(props.label);
     }
