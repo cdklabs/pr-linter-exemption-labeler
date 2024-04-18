@@ -4,6 +4,11 @@ const project = new GitHubActionTypeScriptProject({
   release: false,
   name: 'pr-linter-exemption-labeler',
   deps: ['@octokit/graphql', '@actions/core', '@actions/github', '@octokit/rest'],
+  autoApproveUpgrades: true,
+  autoApproveOptions: {
+    allowedUsernames: ['cdklabs-automation'],
+    secret: 'GITHUB_TOKEN',
+  },
   metadata: {
     author: 'Kendra Neil',
     inputs: {
