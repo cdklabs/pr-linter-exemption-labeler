@@ -1,4 +1,4 @@
-const { GitHubActionTypeScriptProject } = require('projen-github-action-typescript');
+import { GitHubActionTypeScriptProject, RunsUsing } from 'projen-github-action-typescript';
 const project = new GitHubActionTypeScriptProject({
   defaultReleaseBranch: 'main',
   release: false,
@@ -9,8 +9,13 @@ const project = new GitHubActionTypeScriptProject({
     allowedUsernames: ['cdklabs-automation'],
     secret: 'GITHUB_TOKEN',
   },
-  metadata: {
+  projenrcTs: true,
+  actionMetadata: {
     author: 'Kendra Neil',
+    runs: {
+      main: 'dist/index.js',
+      using: RunsUsing.NODE_20,
+    },
     inputs: {
       'github-token': {
         description: 'GitHub token',
@@ -21,10 +26,12 @@ const project = new GitHubActionTypeScriptProject({
   devDeps: ['projen-github-action-typescript'],
   eslintOptions: {
     prettier: true,
+    dirs: ['src', 'test'],
   },
   jestOptions: {
-    verbose: true,
-    silent: true,
+    jestConfig: {
+      verbose: true,
+    },
   },
 });
 
@@ -35,14 +42,14 @@ project.package.addField('prettier', {
   printWidth: 100,
 });
 
-project.eslint.addRules({
+project.eslint?.addRules({
   'prettier/prettier': [
     'error',
     { singleQuote: true, semi: true, trailingComma: 'es5', printWidth: 100 },
   ],
 });
 
-project.eslint.addOverride({
+project.eslint?.addOverride({
   files: ['*-function.ts'],
   rules: { 'prettier/prettier': 'off' },
 });
