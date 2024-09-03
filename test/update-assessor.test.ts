@@ -1,7 +1,7 @@
-import { mockAddLabels } from './__mocks__/@octokit/rest';
 import { CommentText, GitHubComment, Label, ActionType } from '../src/common-types';
 import { GitHubClient } from '../src/github-client';
 import { LabelUpdateAssessor } from '../src/update-assessor';
+import { mockAddLabels } from './__mocks__/@octokit/rest';
 
 describe('Update Assessor Tests', () => {
   test('on comment created without relevant text, no action is taken', async () => {
