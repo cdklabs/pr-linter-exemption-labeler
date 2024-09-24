@@ -165,7 +165,7 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/jest,@vercel/ncc,eslint-config-prettier,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,jest,prettier,projen,projen-github-action-typescript,ts-jest,ts-node,typescript,@actions/core,@actions/github,@octokit/graphql,@octokit/rest"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/jest,@types/node,@vercel/ncc,eslint-config-prettier,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,jest,prettier,projen,projen-github-action-typescript,ts-jest,ts-node,typescript,@actions/core,@actions/github,@octokit/graphql,@octokit/rest"
         },
         {
           "exec": "yarn install --check-files"
