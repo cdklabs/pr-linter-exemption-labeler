@@ -764,9 +764,9 @@
     once "^1.4.0"
 
 "@octokit/request-error@^6.0.1":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@octokit/request-error/-/request-error-6.1.4.tgz#ad96e29148d19edc2ba8009fc2b5a24a36c90f16"
-  integrity sha512-VpAhIUxwhWZQImo/dWAN/NpPqqojR6PSLgLYAituLM6U+ddx9hCioFGwBr5Mi+oi5CLeJkcAs3gJ0PYYzU6wUg==
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@octokit/request-error/-/request-error-6.1.5.tgz#907099e341c4e6179db623a0328d678024f54653"
+  integrity sha512-IlBTfGX8Yn/oFPMwSfvugfncK2EwRLjzbrpifNaMY8o/HTEAFqCA1FZxjD9cWvSKBHgrIhc4CSBIzMxiLsbzFQ==
   dependencies:
     "@octokit/types" "^13.0.0"
 
@@ -808,9 +808,9 @@
     "@octokit/openapi-types" "^20.0.0"
 
 "@octokit/types@^13.0.0", "@octokit/types@^13.1.0", "@octokit/types@^13.5.0":
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-13.5.0.tgz#4796e56b7b267ebc7c921dcec262b3d5bfb18883"
-  integrity sha512-HdqWTf5Z3qwDVlzCrP8UJquMwunpDiMPt5er+QjGzL4hqr/vBVY/MauQgS1xWxCDT1oMx1EULyqxncdCY/NVSQ==
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-13.5.1.tgz#5685a91f295195ddfff39723b093b0df9609ce6e"
+  integrity sha512-F41lGiWBKPIWPBgjSvaDXTTQptBujnozENAK3S//nj7xsFdYdirImKlBB/hTjr+Vii68SM+8jG3UJWRa6DMuDA==
   dependencies:
     "@octokit/openapi-types" "^22.2.0"
 
@@ -1673,9 +1673,9 @@ ejs@^3.1.10:
     jake "^10.8.5"
 
 electron-to-chromium@^1.5.4:
-  version "1.5.27"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.27.tgz#5203ce5d6054857d84ba84d3681cbe59132ade78"
-  integrity sha512-o37j1vZqCoEgBuWWXLHQgTN/KDKe7zwpiY5CPeq2RvUqOyJw9xnrULzZAEVQ5p4h+zjMk7hgtOoPdnLxr7m/jw==
+  version "1.5.28"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.28.tgz#aee074e202c6ee8a0030a9c2ef0b3fe9f967d576"
+  integrity sha512-VufdJl+rzaKZoYVUijN13QcXVF5dWPZANeFTLNy+OSpHdDL5ynXTF35+60RSBbaQYB1ae723lQXHCrf4pyLsMw==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -1847,9 +1847,9 @@ eslint-import-resolver-typescript@^3.6.3:
     is-glob "^4.0.3"
 
 eslint-module-utils@^2.8.1, eslint-module-utils@^2.9.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.11.0.tgz#b99b211ca4318243f09661fae088f373ad5243c4"
-  integrity sha512-gbBE5Hitek/oG6MUVj6sFuzEjA/ClzNflVrLovHi/JgLdC7fiN5gLAY1WIPW1a0V5I999MnsrvVrCOGmmVqDBQ==
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.11.1.tgz#6d5a05f09af98f4d238a819ae4c23626a75fa65b"
+  integrity sha512-EwcbfLOhwVMAfatfqLecR2yv3dE5+kQ8kx+Rrt0DvDXEVwW86KQ/xbMDQhtp5l42VXukD5SOF8mQQHbaNtO0CQ==
   dependencies:
     debug "^3.2.7"
 
@@ -3419,10 +3419,10 @@ pretty-format@^29.0.0, pretty-format@^29.7.0:
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
-projen-github-action-typescript@^0.0.453:
-  version "0.0.453"
-  resolved "https://registry.yarnpkg.com/projen-github-action-typescript/-/projen-github-action-typescript-0.0.453.tgz#5b972eabd1f4043e7b5238a6565c3b68cd21026a"
-  integrity sha512-LnNtW7io4R0wfxNyiAfxoZJAeh3j1NHolNwXsHqGOkvPhGW4VaZEHyKkr5z81L3qeFVWaygpKPNuRw79GAzKxw==
+projen-github-action-typescript@^0.0.454:
+  version "0.0.454"
+  resolved "https://registry.yarnpkg.com/projen-github-action-typescript/-/projen-github-action-typescript-0.0.454.tgz#326151648e6d8becd6fd80f6de3e5984779aad13"
+  integrity sha512-dzSychqrjFwOZogiN7R2JYPA9qGQKU1RPikDmirBpg1HsZwCV/t/JGEr6MABv0Ry7LHuKWekQB1lTGGZR54hpQ==
 
 projen@^0.88.0:
   version "0.88.0"
