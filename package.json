@@ -18,7 +18,7 @@
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.13",
+    "@types/jest": "^29.5.14",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^7",
     "@typescript-eslint/parser": "^7",
@@ -33,7 +33,7 @@
     "jest-junit": "^15",
     "prettier": "^2.8.8",
     "projen": "^0.88.6",
-    "projen-github-action-typescript": "^0.0.482",
+    "projen-github-action-typescript": "^0.0.483",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^4.9.5"
