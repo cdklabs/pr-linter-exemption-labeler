@@ -34,7 +34,7 @@
     "prettier": "^2.8.8",
     "projen": "^0.91.18",
     "projen-github-action-typescript": "^0.0.513",
-    "ts-jest": "^29.2.6",
+    "ts-jest": "^29.3.0",
     "ts-node": "^10.9.2",
     "typescript": "^4.9.5"
   },
