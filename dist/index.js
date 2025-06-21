@@ -33157,7 +33157,7 @@ class RequestError extends Error {
 
 
 // pkg/dist-src/version.js
-var dist_bundle_VERSION = "0.0.0-development";
+var dist_bundle_VERSION = "9.2.4";
 
 // pkg/dist-src/defaults.js
 var defaults_default = {
@@ -33754,7 +33754,7 @@ class dist_src_RequestError extends Error {
 
 
 // pkg/dist-src/version.js
-var request_dist_bundle_VERSION = "0.0.0-development";
+var request_dist_bundle_VERSION = "9.2.4";
 
 // pkg/dist-src/defaults.js
 var dist_bundle_defaults_default = {
