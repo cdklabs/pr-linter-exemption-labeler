@@ -22,7 +22,7 @@
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
-    "@vercel/ncc": "^0.38.3",
+    "@vercel/ncc": "^0.38.4",
     "constructs": "^10.0.0",
     "eslint": "^9",
     "eslint-config-prettier": "^8.10.2",
@@ -34,7 +34,7 @@
     "prettier": "^2.8.8",
     "projen": "^0.96.1",
     "projen-github-action-typescript": "^0.0.514",
-    "ts-jest": "^29.4.2",
+    "ts-jest": "^29.4.3",
     "ts-node": "^10.9.2",
     "typescript": "^4.9.5"
   },
